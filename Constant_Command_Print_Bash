@@ -1,0 +1,1 @@
+for i in {1..5}; do echo -e " \r\n Netstat Count no.$i \r\n "; date; netstat -P tcp | grep 192.168.1.1; sleep 60; done
