@@ -1,0 +1,1 @@
+1..15 | ForEach-Object {Write-host "netstat output $_ "; Write-Output "netstat output $_ "; Write-host "Current Time Stamp $(get-date)"; get-date; netstat -an; netstat -an | Measure-Object; Start-Sleep -s 60;} | Out-File -FilePath J:\powershell_script_output\outputfile.txt
